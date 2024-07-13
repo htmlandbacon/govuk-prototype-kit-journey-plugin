@@ -1,0 +1,44 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName="What is your National Insurance number?" %}
+
+{% block beforeContent %}
+{{ 
+  govukBackLink({
+    text: "Back",
+    href: "javascript: history.back();"
+  })
+}}
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+      <form method="post" action="#">
+      {{ 
+        govukInput({
+          label: {
+            text: "What is your National Insurance number?",
+            classes: "govuk-label--l",
+            isPageHeading: true
+          },
+          value: data.nino,
+          classes: "govuk-input--width-20",
+          id: "nino",
+          name: "nino",
+          autocomplete: "nino",
+          spellcheck: false
+        })
+      }}
+
+      {{ 
+          govukButton({
+              text: "Continue"
+          })
+      }}
+      </form>
+  </div>
+</div>
+
+{% endblock %}

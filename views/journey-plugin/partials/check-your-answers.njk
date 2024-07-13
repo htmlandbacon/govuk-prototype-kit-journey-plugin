@@ -1,0 +1,57 @@
+{{ 
+    govukSummaryList({
+    rows: [
+        {
+        key: {
+            text: "Full Name"
+        },
+        value: {
+            text: data.fullName
+        },
+        actions: {
+            items: [
+            {
+                href: "/journey-plugin/name",
+                text: "Change",
+                visuallyHiddenText: "your full name"
+            }
+            ]
+        }
+        },
+        {
+        key: {
+            text: "Date of birth"
+        },
+        value: {
+            text: data["dob-day"] + " " + data["dob-month"] + " " + data["dob-year"]
+        },
+        actions: {
+            items: [
+            {
+                href: "/journey-plugin/date-of-birth",
+                text: "Change",
+                visuallyHiddenText: "your date of birth"
+            }
+            ]
+        }
+        },
+        {
+        key: {
+            text: "National Insurance number"
+        },
+        value: {
+            text: data["nino"]
+        },
+        actions: {
+            items: [
+            {
+                href: "/journey-plugin/nino",
+                text: "Change",
+                visuallyHiddenText: "your National Insurance number"
+            }
+            ]
+        }
+        }
+    ]
+    })
+}}

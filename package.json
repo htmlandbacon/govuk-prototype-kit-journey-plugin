@@ -1,0 +1,17 @@
+{
+  "name": "govuk-prototype-kit-journey-plugin",
+  "version": "1.0.0",
+  "description": "Example of a small govuk prototype kit journey",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@eslint/js": "^9.7.0",
+    "eslint": "^9.7.0",
+    "globals": "^15.8.0"
+  }
+}
