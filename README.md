@@ -19,7 +19,7 @@ journeyPluginExample(router);
 3. Link to the journey section
 
 ```
-{# example of a start button }
+{# example of a start button #}
 {{ 
     govukButton({
         text: "Start now",
