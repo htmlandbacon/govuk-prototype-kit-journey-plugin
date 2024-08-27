@@ -1,11 +1,16 @@
 {
+  "version-2024-03": {
     "meta": {
       "description": "An example of a partial user-journey coming from a plugin."
     },
     "pluginDependencies": [
-      "govuk-frontend"
+      "@nowprototypeit/govuk-frontend-adaptor"
     ],
     "nunjucksPaths": [
       "/views"
+    ],
+    "expressRouters": [
+      "/routers/nowprototypeit.js"
     ]
+  }
 }
